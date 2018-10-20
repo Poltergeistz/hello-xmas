@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://apis.google.com"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>BABEL ES6</title>
+</head>
+
+<body>
+        <!--  -->
+        <div class="parent">
+        <div class="left">
+        <label for="name">Name :</label>
+        <input class="input-form" type="text" name="name" id="name">
+        <input class="btn" type="submit" value="greet" id="greetings">
+        <p class="lead" id="content"></p>
+        </div>
+        <!--  -->
+        <div class="right">
+        <label for="history">Greet History :</label>
+        <input class="input-form" type="text" name="searchbar" id="searchbar">
+        <input class="btn" type="submit" value="search" id="search">
+        </div>
+        <div>
+        <input type="submit" class="btn" value="Clear" id="clear">
+        <table>
+            <tr>
+                <th scope="col">Name History</th>
+            </tr>
+            <tr>
+                <td id="history"></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th scope="col">Search Results</th>
+            </tr>
+            <tr>
+                <td id="search-history"></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+
+    <script src="../src/app.es6.js"></script>
+</body>
+
+</html>
