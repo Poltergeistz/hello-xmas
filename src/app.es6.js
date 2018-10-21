@@ -20,8 +20,8 @@ Lorsque ce bouton est cliqué, n'afficher que les noms commençant
 
 /* Greetings */
 
-let btnGreet = document.getElementById('greetings');
-let history = document.getElementById('history');
+let btnGreet = document.getElementById('greetings'); // HTML Greet Button
+let history = document.getElementById('history'); // HTML History Paragraph
 let array = [];
 const greet = () => {
     let nameInput = document.getElementById('name');
@@ -52,13 +52,13 @@ const greet = () => {
 btnGreet.addEventListener('click', greet, false);
 
 /* History research case insensitive */
-let btnHistory = document.getElementById('search');
-let storedValue = localStorage.getItem('nameInput');
-let greetingsHistory = document.getElementById('search-history');
+let btnHistory = document.getElementById('search'); // HTML Search Button
+let storedValue = localStorage.getItem('nameInput'); // LocalStorage Input
+let greetingsHistory = document.getElementById('search-history'); // HTML TD History Results
 const research = () => {
-    let searchInput = document.getElementById('searchbar');
+    let searchInput = document.getElementById('searchbar'); // HTML Search User Input
 
-    // Using a RegExp to the UserInput search 
+    // Creating a RegExp with the UserInput search 
     let storedInput = new RegExp(searchInput.value, 'i');
 
     // It return True when ignoreCase is used 
@@ -88,7 +88,7 @@ const research = () => {
 
 btnHistory.addEventListener('click', research, false);
 
-/* Clear local storage */
+/* Clear local storage for debug purpose */
 let btnClear = document.getElementById('clear');
 const clear = () => {
     localStorage.clear();
