@@ -1,7 +1,7 @@
 # hello-xmas
 Semaine 27 : Exercice Babel ES6
 
-lien en ligne vers l'exercice : ![hello-xmas](https://poltergeistz.github.io/hello-xmas/public/)
+lien en ligne vers l'exercice : https://poltergeistz.github.io/hello-xmas/public/
 
 
 # Intro
